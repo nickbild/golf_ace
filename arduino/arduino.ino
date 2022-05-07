@@ -10,40 +10,18 @@ __extension__ \
 #include <stdio.h>
 #include <ai_golf_inferencing.h>
 #include "edge-impulse-sdk/classifier/ei_run_classifier.h"
-
 #include "edge-impulse-sdk/porting/ei_classifier_porting.h"
-
 #include "edge-impulse-sdk/dsp/kissfft/kiss_fftr.h"
-
 #include <Adafruit_NeoPixel.h>
-
-#define PIN        6
-
-Adafruit_NeoPixel pixels(1, PIN, NEO_GRB + NEO_KHZ800);
 #include <Arduino_LSM6DS3.h>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#define PIN        6
+Adafruit_NeoPixel pixels(1, PIN, NEO_GRB + NEO_KHZ800);
 
 // Callback function declaration
 static int get_signal_data(size_t offset, size_t length, float *out_ptr);
 
-// Raw features copied from test sample
+// Raw features used in inferences.
 float features[375] = {};
 
 int inference(void) {
@@ -78,15 +56,10 @@ int inference(void) {
             result.timing.classification, 
             result.timing.anomaly);
 
-
-
-    // Print anomaly result (if it exists)
-
-    printf("Anomaly prediction: %.3f\r\n", result.anomaly);
     Serial.println(result.anomaly);
 
+    // If there is an anomaly, set Neopixel to red, otherwise green.
     if (result.anomaly > 1) {
-      Serial.println("ANOMALY *****************");
       pixels.setPixelColor(0, pixels.Color(150, 0, 0));
       pixels.show();
       delay(2000);
@@ -94,14 +67,12 @@ int inference(void) {
       pixels.show();
 
     } else {
-      Serial.println("PRO ********************");
       pixels.setPixelColor(0, pixels.Color(0, 150, 0));
       pixels.show();
       delay(2000);
       pixels.setPixelColor(0, pixels.Color(0, 0, 0));
       pixels.show();
     }
-
 
     return 0;
 }
@@ -127,18 +98,17 @@ void setup() {
 
   if (!IMU.begin()) {
     Serial.println("Failed to initialize IMU!");
-
     while (1);
   }
   
 }
 
 void loop() {
-  Serial.println("Hi");
-
+  // Wait for a button press.
   if (digitalRead(12) == HIGH) {
-    Serial.println("button pressed");
+    // Collect 2 seconds of accelerometer data.
     getAccelData();
+    // Run anomaly detection.
     inference();
   }
   
@@ -148,17 +118,13 @@ void getAccelData() {
   float x, y, z;
   int cnt = 0;
   int idx = 0;
-  
+
+  // Get 125 samples (~2 seconds).
   while (true) {
     if (IMU.accelerationAvailable()) {
       IMU.readAcceleration(x, y, z);
-  
-      Serial.print(x);
-      Serial.print('\t');
-      Serial.print(y);
-      Serial.print('\t');
-      Serial.println(z);
 
+      // Store in global array used by inference engine.
       features[idx] = x;
       idx++;
       features[idx] = y;
