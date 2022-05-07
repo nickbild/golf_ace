@@ -1,4 +1,26 @@
 # Golf Ace
 
-Coming soon!
+Golf Ace uses machine learning to teach you to putt with the same technique as your favorite golf pro.
 
+## How It Works
+
+When you are ready to putt, press the button on the handle of the putter.  An accelerometer onboard the Arduino Nano 33 IoT will begin recording measurements as you putt.  After the putt, an RGB LED on the head of the putter will give feedback -- a green light indicates that your form closely resembled that of the pro golfer that the putter was trained to recognize; red means that your technique was off.
+
+In order for the putter to recognize proper putting technique, a K-means clustering algorithm was trained on a set of accelerometer data collected from an instrumented putter.  Ideally, this data would be collected from professional golfers, which would allow golfers to buy a putter that teaches them to putt like their favorrite pro golfer.  But, since there are no pro golfers that owe me a favor, for this prototype, I stood in as the "pro".  I am, after all, a winner of the GrandMaster Tournament of Champions Invitational minigolf tournament (which may or may not have been invented by myself and a few friends), so that should suffice for the occasion.  To simplify building/training/deploying this model, I used Edge Impulse.
+
+## Media
+
+## Bill of Materials
+
+- 1 x Arduino Nano 33 IoT
+- 1 x 4-pin 5050 RGB LED
+- 1 x 3.7V to 5.0V power boost converter
+- 1 x 400 mAh LiPo battery
+- 1 x Micro USB breakout board
+- 1 x Pushbutton
+- 1 x Golf putter
+- Miscellaneous wire
+
+## About the Author
+
+[Nick A. Bild, MS](https://nickbild79.firebaseapp.com/#!/)
