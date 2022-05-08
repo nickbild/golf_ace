@@ -1,6 +1,6 @@
 # Golf Ace
 
-Golf Ace uses machine learning to teach you to putt with the same technique as your favorite golf pro.
+Learn to putt like your favorite pro golfer with machine learning.
 
 ![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/putting_logo_sm.jpg)
 
