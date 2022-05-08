@@ -24,6 +24,8 @@ YouTube: https://www.youtube.com/watch?v=0Lobf9xCVeI
 
 ![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/putting_sm.jpg)
 
+![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/arduino_close_sm.jpg)
+
 ![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/hardware_zoom_sm.jpg)
 
 ![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/club_head_top_sm.jpg)
