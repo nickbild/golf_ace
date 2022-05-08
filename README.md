@@ -8,13 +8,15 @@
 
 ## How It Works
 
-When you are ready to putt, press the button on the handle of the putter.  An accelerometer onboard the Arduino Nano 33 IoT will begin recording measurements as you putt.  After the putt, an RGB LED on the head of the putter will give feedback -- a green light indicates that your form closely resembled that of the pro golfer that the putter was trained to recognize; red means that your technique was off.
+When you are ready to putt, press the button on the handle of the putter.  An accelerometer onboard the Arduino Nano 33 IoT will begin recording measurements during the swing.  After the putt, an RGB LED on the head of the putter will give feedback -- a green light indicates that your form closely resembled that of the pro golfer that the putter was trained to recognize; red means that your technique was off.
 
-In order for the putter to recognize proper putting technique, a K-means clustering algorithm (for anomaly detection) was trained on a set of accelerometer data collected from an instrumented putter.  Ideally, this data would be collected from professional golfers, which would allow golfers to buy a putter that teaches them to putt like their favorrite pro.  But, since there are no pro golfers that owe me a favor, for this prototype, I stood in as the "pro".  I am, after all, a winner of the GrandMaster Tournament of Champions Invitational minigolf tournament (which may or may not have been invented by myself and a few friends), so that should suffice for the occasion.  To simplify building/training/deploying this model, I used Edge Impulse.
+In order for the putter to recognize proper putting technique, a K-means clustering algorithm (for anomaly detection) was trained on a set of accelerometer data collected from an instrumented putter.  Ideally, this data would be collected from a professional golfer over time, such that there is enough data to perfectly characterize the putting technique that makes that golfer great.  By loading that trained model onto a Golf Ace putter, it would allow enthusiasts to buy a club that teaches them to putt like their favorite pro.
+
+But, since there are no pro golfers that owe me a favor, for this prototype, I stood in as the "pro".  I am, after all, a winner of the GrandMaster Tournament of Champions Invitational minigolf tournament (which may or may not have been invented by myself and a few friends), so that should suffice for the occasion.  To simplify building/training/deploying the anomaly detection model, I used Edge Impulse.
 
 The Arduino sketch can be [found here](https://github.com/nickbild/golf_ace/tree/main/arduino).
 
-One limitation of this device is that it is only capable of telling you if you have your technique right or not.  It cannot tell you *what* you need to do differently.  I envision a putter like this coming packaged with a video and/or written instructions from the golfer it was trained on explaining their technique.  Then one could use that as the target they are working towards, with the putter offering feedback as to whether or not the target is being met.
+One limitation of this device is that it is only capable of telling you if you have your technique right or not.  It cannot tell you *what* you need to do differently.  I envision a putter like this coming packaged with a video and/or written instructions from the golfer it was trained to explain their technique.  Then one could use that as the target they are working towards, with the putter offering feedback as to whether or not the target is being met.
 
 ## Media
 
