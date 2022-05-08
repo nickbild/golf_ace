@@ -16,6 +16,8 @@ One limitation of this device is that it is only capable of telling you if you h
 
 ## Media
 
+YouTube: https://www.youtube.com/watch?v=0Lobf9xCVeI
+
 ![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/putting_sm.jpg)
 
 ![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/hardware_zoom_sm.jpg)
