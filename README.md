@@ -14,7 +14,7 @@ In order for the putter to recognize proper putting technique, a K-means cluster
 
 But, since there are no pro golfers that owe me a favor, for this prototype, I stood in as the "pro" that supplied the model training data.  I am, after all, a winner of the GrandMaster Tournament of Champions Invitational minigolf tournament (which may or may not have been invented by myself and a few friends), so that should suffice for the occasion.  To simplify building/training/deploying the anomaly detection model, I used Edge Impulse.
 
-The Arduino sketch can be [found here](https://github.com/nickbild/golf_ace/tree/main/arduino).
+The Arduino sketch, which handles accelerometer data collection, machine learning model inferences, the RGB LED, and button presses can be [found here](https://github.com/nickbild/golf_ace/tree/main/arduino).
 
 One limitation of this device is that it is only capable of telling you if you have your technique right or not.  It cannot tell you *what* you need to do differently.  I envision a putter like this coming packaged with a video and/or written instructions from the golfer it was trained by to explain their technique.  Then one could use that as the target they are working towards, with the putter offering feedback as to whether or not the target is being met.
 
