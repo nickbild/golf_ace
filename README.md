@@ -16,6 +16,16 @@ One limitation of this device is that it is only capable of telling you if you h
 
 ![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/putting_sm.jpg)
 
+![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/hardware_zoom_sm.jpg)
+
+![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/club_head_top_sm.jpg)
+
+![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/club_head_side_sm.jpg)
+
+![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/full_club_sm.jpg)
+
+![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/club_handle_sm.jpg)
+
 ## Bill of Materials
 
 - 1 x Arduino Nano 33 IoT
