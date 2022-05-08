@@ -3,7 +3,7 @@
 Learn to putt like your favorite pro golfer with machine learning.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/nickbild/golf_ace/main/media/teaser.gif>
+<img src="https://raw.githubusercontent.com/nickbild/golf_ace/main/media/teaser.gif">
 </p>
 
 ![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/putting_logo_sm.jpg)
