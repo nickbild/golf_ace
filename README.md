@@ -6,8 +6,6 @@
 <img src="https://raw.githubusercontent.com/nickbild/golf_ace/main/media/teaser.gif">
 </p>
 
-Learn to putt like your favorite pro golfer with machine learning.
-
 ## How It Works
 
 When you are ready to putt, press the button on the handle of the putter.  An accelerometer onboard the Arduino Nano 33 IoT will begin recording measurements as you putt.  After the putt, an RGB LED on the head of the putter will give feedback -- a green light indicates that your form closely resembled that of the pro golfer that the putter was trained to recognize; red means that your technique was off.
