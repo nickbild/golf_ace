@@ -12,7 +12,7 @@ When you are ready to putt, press the button on the handle of the putter.  An ac
 
 In order for the putter to recognize proper putting technique, a K-means clustering algorithm (for anomaly detection) was trained on a set of accelerometer data collected from an instrumented putter.  Ideally, this data would be collected from a professional golfer over time, such that there is enough data to perfectly characterize the putting technique that makes that golfer great.  By loading a model trained with that data onto a Golf Ace putter, it would allow enthusiasts to buy a club that teaches them to putt like their favorite pro.
 
-But, since there are no pro golfers that owe me a favor, for this prototype, I stood in as the "pro".  I am, after all, a winner of the GrandMaster Tournament of Champions Invitational minigolf tournament (which may or may not have been invented by myself and a few friends), so that should suffice for the occasion.  To simplify building/training/deploying the anomaly detection model, I used Edge Impulse.
+But, since there are no pro golfers that owe me a favor, for this prototype, I stood in as the "pro" that supplied the model training data.  I am, after all, a winner of the GrandMaster Tournament of Champions Invitational minigolf tournament (which may or may not have been invented by myself and a few friends), so that should suffice for the occasion.  To simplify building/training/deploying the anomaly detection model, I used Edge Impulse.
 
 The Arduino sketch can be [found here](https://github.com/nickbild/golf_ace/tree/main/arduino).
 
