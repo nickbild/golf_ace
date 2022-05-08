@@ -2,11 +2,11 @@
 
 ![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/putting_logo_sm.jpg)
 
-Learn to putt like your favorite pro golfer with machine learning.
-
 <p align="center">
 <img src="https://raw.githubusercontent.com/nickbild/golf_ace/main/media/teaser.gif">
 </p>
+
+Learn to putt like your favorite pro golfer with machine learning.
 
 ## How It Works
 
