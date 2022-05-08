@@ -14,6 +14,8 @@ One limitation of this device is that it is only capable of telling you if you h
 
 ## Media
 
+![](https://raw.githubusercontent.com/nickbild/golf_ace/main/media/putting_sm.jpg)
+
 ## Bill of Materials
 
 - 1 x Arduino Nano 33 IoT
